@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize visitor counter with random number
     const visitorCount = document.getElementById('visitorCount');
     if (visitorCount) {
-        visitorCount.textContent = Math.floor(Math.random() * 9000) + 1000;
+        visitorCount.textContent = Math.floor(Math.random() * 46) + 3;
     }
     
     // Clear localStorage to ensure fresh token data
