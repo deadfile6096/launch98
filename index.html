@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPad 98 - Create Your Own Meme Token!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <!-- No frameworks as per requirements, pure HTML/CSS/JS -->
+</head>
+<body>
+    <div class="monitor-wrapper">
+        <div class="monitor-content">
+                <!-- Site Content -->
+                <div class="site-container">
+                    <!-- Windows 2000 Header -->
+                    <div class="win2k-header">
+                        <div class="win2k-header-title">LaunchPad 98</div>
+                        <div class="win2k-header-buttons">
+                            <div class="win2k-header-button minimize">_</div>
+                            <div class="win2k-header-button maximize">□</div>
+                            <div class="win2k-header-button close">×</div>
+                        </div>
+                    </div>
+                    
+                    <div class="site-content">
+                        <!-- Welcome Header -->
+                        <div class="welcome-header">
+                            <span class="blink">*** WELCOME TO LAUNCHPAD 98 - THE HOTTEST TOKEN LAUNCHPAD ON THE WEB!!! ***</span>
+                        </div>
+
+                    <!-- Navigation -->
+                    <div class="navigation">
+                        <table width="100%" border="1" cellpadding="5" cellspacing="0" bgcolor="#CCCCFF">
+                            <tr>
+                                <td align="center"><a href="index.html" class="nav-link">HOME</a></td>
+                                <td align="center"><a href="create.html" class="nav-link">CREATE TOKEN</a></td>
+                                <td align="center"><a href="tokens.html" class="nav-link">ALL TOKENS</a></td>
+                                <td align="center"><a href="about.html" class="nav-link">ABOUT US</a></td>
+                                <td align="center"><a href="https://x.com/Launchpad_98" target="_blank" class="nav-link"><img src="images/icon/twitter.png" alt="Twitter" class="twitter-icon" style="width: 20px; height: 20px; vertical-align: middle;"> X.COM</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Visitor Counter -->
+                    <div class="visitor-counter">
+                        <img src="images/icon/info.png" alt="Visitor Counter" class="counter-img">
+                        <div class="counter-text">Visitors: <span id="visitorCount">1337</span></div>
+                    </div>
+
+                    <!-- Main Banner -->
+                    <div class="main-banner module-window" style="background-color: white;">
+                        <div class="banner-overlay" style="position: static; padding: 20px;">
+                            <h1 class="banner-text blink" style="color: #FF0000; text-shadow: 2px 2px 4px #000000; font-size: 24px; text-align: center; margin-bottom: 20px;">CREATE YOUR OWN MEME TOKEN NOW!!!</h1>
+                            <div style="text-align: center;">
+                                <a href="create.html" style="display: inline-block; padding: 10px 20px; background-color: #0000FF; color: #FFFFFF; font-weight: bold; font-size: 18px; text-decoration: none; border: 3px outset #0000AA; border-radius: 5px; box-shadow: 3px 3px 5px #888888;">
+                                    CREATE YOUR TOKEN!
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Latest Tokens Section -->
+                    <div class="section-header">
+                        <img src="images/icon/new.png" alt="New!" class="new-icon">
+                        <h2>NEWEST TOKENS</h2>
+                        <img src="images/icon/fire.png" alt="Hot!" class="hot-icon">
+                    </div>
+
+                    <!-- Token Feed -->
+                    <div class="token-feed module-window" id="tokenFeed">
+                        <!-- Tokens will be loaded here via JavaScript -->
+                        <div class="loading">
+                            <img src="images/loading.gif" alt="Loading...">
+                            <p>Loading the hottest tokens...</p>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="cta-section module-window">
+                        <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#FFFF99">
+                            <tr>
+                                <td align="center">
+                                    <h3 class="blink">DON'T MISS OUT!!!</h3>
+                                    <p>Join thousands of internet pioneers creating the next BIG meme token!</p>
+                                    <a href="create.html" class="cta-button">START NOW!</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Random Popup -->
+                    <div id="randomPopup" class="popup">
+                        <div class="popup-content">
+                            <div class="popup-header">
+                                <span class="popup-title">CONGRATULATIONS!!!</span>
+                                <span class="close-popup">&times;</span>
+                            </div>
+                            <div class="popup-body">
+                                <p>You've been selected to receive 1000 FREE tokens!</p>
+                                <button class="popup-button">CLAIM NOW!</button>
+                                <div id="virus-container" style="display: none; width: 100%; text-align: center; margin-top: 15px;">
+                                    <img src="images/gif/virus.gif" alt="VIRUS DETECTED!!!" style="max-width: 100%;">
+                                    <p style="color: #FF0000; font-weight: bold; margin-top: 10px; animation: blink 0.5s infinite;">VIRUS DETECTED!!! YOUR COMPUTER IS INFECTED!!!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Footer -->
+                    <div class="footer">
+                        <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <td align="center">
+                                    <div class="footer-links">
+                                        <a href="index.html">Home</a> |
+                                        <a href="about.html">About</a> |
+                                        <a href="about.html#privacy">Privacy Policy</a> |
+                                        <a href="about.html#contact">Contact</a>
+                                    </div>
+                                    <div class="copyright">
+                                        &copy; 2025 LaunchPad 98. Best viewed with Netscape Navigator 4.0 or Internet Explorer 5.0
+                                    </div>
+                                    <div class="webring">
+                                        <a href="#"><img src="images/icon/Web_ring.png" alt="Web Ring"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="error_popup.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

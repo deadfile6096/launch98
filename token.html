@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Details - LaunchPad 98</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="monitor-wrapper">
+        <div class="monitor-content">
+                <!-- Site Content -->
+                <div class="site-container">
+                    <!-- Windows 2000 Header -->
+                    <div class="win2k-header">
+                        <div class="win2k-header-title">Token Details - LaunchPad 98</div>
+                        <div class="win2k-header-buttons">
+                            <div class="win2k-header-button minimize">_</div>
+                            <div class="win2k-header-button maximize">□</div>
+                            <div class="win2k-header-button close">×</div>
+                        </div>
+                    </div>
+                    
+                    <div class="site-content">
+                    <!-- Welcome Header -->
+                    <div class="welcome-header">
+                        <span class="blink">*** CHECK OUT THIS AMAZING MEME TOKEN!!! TO THE MOON!!! ***</span>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="navigation">
+                        <table width="100%" border="1" cellpadding="5" cellspacing="0" bgcolor="#CCCCFF">
+                            <tr>
+                                <td align="center"><a href="index.html" class="nav-link">HOME</a></td>
+                                <td align="center"><a href="create.html" class="nav-link">CREATE TOKEN</a></td>
+                                <td align="center"><a href="tokens.html" class="nav-link">ALL TOKENS</a></td>
+                                <td align="center"><a href="about.html" class="nav-link">ABOUT US</a></td>
+                                <td align="center"><a href="https://x.com/home" target="_blank" class="nav-link"><img src="images/icon/twitter.png" alt="Twitter" class="twitter-icon" style="width: 20px; height: 20px; vertical-align: middle;"> X.COM</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Token Details Section -->
+                    <div id="tokenDetails" class="token-details module-window">
+                        <!-- Token details will be loaded here via JavaScript -->
+                        <div class="loading">
+                            <img src="images/loading.gif" alt="Loading...">
+                            <p>Loading token details...</p>
+                        </div>
+                    </div>
+
+                    <!-- Price Chart Section -->
+                    <div class="price-chart-section module-window">
+                        <div class="section-header">
+                            <img src="images/icon/info.png" alt="Chart!" class="chart-icon">
+                            <h2>PRICE CHART</h2>
+                            <img src="images/icon/token.png" alt="Money!" class="money-icon">
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="priceChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Buy/Sell Section -->
+                    <div class="trading-section module-window">
+                        <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#CCFFCC">
+                            <tr>
+                                <td width="50%" align="center">
+                                    <div class="buy-container">
+                                        <h3>BUY THIS TOKEN!</h3>
+                                        <div class="amount-input">
+                                            <label for="buyAmount">Amount:</label>
+                                            <input type="number" id="buyAmount" min="1" value="100">
+                                        </div>
+                                        <button id="buyButton" class="buy-button blink">
+                                            <img src="images/icon/button.png" alt="Buy" class="button-icon">
+                                            BUY NOW!!!
+                                        </button>
+                                    </div>
+                                </td>
+                                <td width="50%" align="center">
+                                    <div class="sell-container">
+                                        <h3>SELL THIS TOKEN!</h3>
+                                        <div class="amount-input">
+                                            <label for="sellAmount">Amount:</label>
+                                            <input type="number" id="sellAmount" min="1" value="50">
+                                        </div>
+                                        <button id="sellButton" class="sell-button">
+                                            <img src="images/icon/button.png" alt="Sell" class="button-icon">
+                                            SELL NOW!
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Comments Section -->
+                    <div class="comments-section module-window">
+                        <div class="section-header">
+                            <img src="images/icon/info.png" alt="Comment!" class="comment-icon">
+                            <h2>COMMENTS</h2>
+                            <img src="images/icon/info.png" alt="Comment!" class="comment-icon">
+                        </div>
+                        <div class="comments-container">
+                            <div class="comment-form">
+                                <textarea id="commentText" placeholder="Share your thoughts on this amazing token!" rows="3"></textarea>
+                                <button id="submitComment" class="comment-button">
+                                    <img src="images/icon/button.png" alt="Post" class="button-icon">
+                                    POST COMMENT!
+                                </button>
+                            </div>
+                            <div id="commentsList" class="comments-list">
+                                <!-- Comments will be loaded here via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Share Section -->
+                    <div class="share-section module-window">
+                        <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#FFDDEE">
+                            <tr>
+                                <td align="center">
+                                    <h3>SHARE THIS AMAZING TOKEN!</h3>
+                                    <div class="share-buttons">
+                                        <a href="#" class="share-button" id="twitterShareDetail">
+                                            <img src="images/icon/browser.png" alt="Twitter">
+                                            Share on Twitter
+                                        </a>
+                                        <a href="#" class="share-button" id="telegramShareDetail">
+                                            <img src="images/icon/browser.png" alt="Telegram">
+                                            Share on Telegram
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+                    <!-- Footer -->
+                    <div class="footer">
+                        <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <td align="center">
+                                    <div class="footer-links">
+                                        <a href="#">Home</a> |
+                                        <a href="#">About</a> |
+                                        <a href="#">Privacy Policy</a> |
+                                        <a href="#">Contact</a>
+                                    </div>
+                                    <div class="copyright">
+                                        &copy; 2025 LaunchPad 98. Best viewed with Netscape Navigator 4.0 or Internet Explorer 5.0
+                                    </div>
+                                    <div class="webring">
+                                        <a href="#"><img src="images/webring.gif" alt="Web Ring"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Sorting options specific styles */
+.sorting-options {
+    height: auto !important;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.sorting-options table {
+    margin: 0;
+}
+
+/* Token list specific styles */
+.token-list {
+    height: auto !important;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Section header adjustments */
+.section-header {
+    margin-bottom: 5px;
+    padding: 5px 0;
+}
+
+/* Category header adjustments */
+.category-header {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Load more button container adjustments */
+.load-more-container {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Wall of fame adjustments */
+.wall-of-fame {
+    height: auto !important;
+    margin-top: 10px;
+}

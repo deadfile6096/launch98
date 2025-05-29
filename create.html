@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Token - LaunchPad 98</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="monitor-wrapper">
+        <div class="monitor-content">
+                <!-- Site Content -->
+                <div class="site-container">
+                    <!-- Windows 2000 Header -->
+                    <div class="win2k-header">
+                        <div class="win2k-header-title">Create Token - LaunchPad 98</div>
+                        <div class="win2k-header-buttons">
+                            <div class="win2k-header-button minimize">_</div>
+                            <div class="win2k-header-button maximize">□</div>
+                            <div class="win2k-header-button close">×</div>
+                        </div>
+                    </div>
+                    
+                    <div class="site-content">
+                        <!-- Welcome Header -->
+                        <div class="welcome-header">
+                            <span class="blink">*** CREATE YOUR OWN MEME TOKEN! BECOME INTERNET FAMOUS! ***</span>
+                        </div>
+
+                    <!-- Navigation -->
+                    <div class="navigation">
+                        <table width="100%" border="1" cellpadding="5" cellspacing="0" bgcolor="#CCCCFF">
+                            <tr>
+                                <td align="center"><a href="index.html" class="nav-link">HOME</a></td>
+                                <td align="center"><a href="create.html" class="nav-link">CREATE TOKEN</a></td>
+                                <td align="center"><a href="tokens.html" class="nav-link">ALL TOKENS</a></td>
+                                <td align="center"><a href="about.html" class="nav-link">ABOUT US</a></td>
+                                <td align="center"><a href="https://x.com/Launchpad_98" target="_blank" class="nav-link"><img src="images/icon/twitter.png" alt="Twitter" class="twitter-icon" style="width: 20px; height: 20px; vertical-align: middle;"> X.COM</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Create Token Form -->
+                    <div class="create-token-section module-window">
+                        <div class="section-header">
+                            <img src="images/icon/new.png" alt="New!" class="new-icon">
+                            <h2>CREATE YOUR MEME TOKEN!</h2>
+                            <img src="images/icon/fire.png" alt="Fire!" class="fire-icon">
+                        </div>
+
+                        <div class="form-container">
+                            <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#FFDDEE">
+                                <tr>
+                                    <td>
+                                        <form id="tokenForm">
+                                            <div class="form-group">
+                                                <label for="tokenName">Token Name:</label>
+                                                <input type="text" id="tokenName" name="tokenName" required maxlength="30">
+                                                <span class="form-hint">Choose a catchy name (max 30 chars)</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="tokenSymbol">Token Symbol:</label>
+                                                <input type="text" id="tokenSymbol" name="tokenSymbol" required maxlength="5">
+                                                <span class="form-hint">Short ticker symbol (max 5 chars)</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="tokenDescription">Token Description:</label>
+                                                <textarea id="tokenDescription" name="tokenDescription" rows="4" required maxlength="200"></textarea>
+                                                <span class="form-hint">Tell us about your amazing token! (max 200 chars)</span>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="tokenImage">Token Image URL:</label>
+                                                <input type="text" id="tokenImage" name="tokenImage" placeholder="https://example.com/your-image.gif">
+                                                <span class="form-hint">Paste a URL to your GIF or image (optional)</span>
+                                            </div>
+
+
+
+                                            <div class="form-actions">
+                                                <button type="submit" class="launch-button blink">
+                                                    <img src="images/icon/button.png" alt="Create" class="button-icon">
+                                                    LAUNCH TOKEN NOW!!!
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Success Message (hidden by default) -->
+                    <div id="successMessage" class="success-message module-window" style="display: none;">
+                        <table width="100%" border="2" cellpadding="10" cellspacing="0" bgcolor="#AAFFAA">
+                            <tr>
+                                <td align="center">
+                                    <h3 class="blink">CONGRATULATIONS!!!</h3>
+                                    <p>Your token has been successfully launched!</p>
+                                    <div id="tokenPreview" class="token-preview">
+                                        <!-- Token preview will be inserted here -->
+                                    </div>
+                                    <div class="share-links">
+                                        <p>Share your amazing token with the world:</p>
+                                        <a href="#" class="share-button" id="twitterShare">
+                                            <img src="images/icon/browser.png" alt="Twitter">
+                                            Share on Twitter
+                                        </a>
+                                        <a href="#" class="share-button" id="telegramShare">
+                                            <img src="images/icon/browser.png" alt="Telegram">
+                                            Share on Telegram
+                                        </a>
+                                    </div>
+                                    <a href="index.html" class="back-button">Back to Home</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+
+
+                    <!-- Footer -->
+                    <div class="footer">
+                        <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <td align="center">
+                                    <div class="footer-links">
+                                        <a href="#">Home</a> |
+                                        <a href="#">About</a> |
+                                        <a href="#">Privacy Policy</a> |
+                                        <a href="#">Contact</a>
+                                    </div>
+                                    <div class="copyright">
+                                        &copy; 2025 LaunchPad 98. Best viewed with Netscape Navigator 4.0 or Internet Explorer 5.0
+                                    </div>
+                                    <div class="webring">
+                                        <a href="#"><img src="images/icon/Web_ring.png" alt="Web Ring"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Meme Tokens - LaunchPad 98</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <div class="monitor-wrapper">
+        <div class="monitor-content">
+                <!-- Site Content -->
+                <div class="site-container">
+                    <!-- Windows 2000 Header -->
+                    <div class="win2k-header">
+                        <div class="win2k-header-title">All Tokens</div>
+                        <div class="win2k-header-buttons">
+                            <div class="win2k-header-button minimize">_</div>
+                            <div class="win2k-header-button maximize">□</div>
+                            <div class="win2k-header-button close">×</div>
+                        </div>
+                    </div>
+                    
+                    <div class="site-content">
+                    <!-- Welcome Header -->
+                    <div class="welcome-header">
+                        <span class="blink">*** BROWSE ALL THE HOTTEST MEME TOKENS ON THE WEB!!! ***</span>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="navigation">
+                        <table width="100%" border="1" cellpadding="5" cellspacing="0" bgcolor="#CCCCFF">
+                            <tr>
+                                <td align="center"><a href="index.html" class="nav-link">HOME</a></td>
+                                <td align="center"><a href="create.html" class="nav-link">CREATE TOKEN</a></td>
+                                <td align="center"><a href="tokens.html" class="nav-link">ALL TOKENS</a></td>
+                                <td align="center"><a href="about.html" class="nav-link">ABOUT US</a></td>
+                                <td align="center"><a href="https://x.com/Launchpad_98" target="_blank" class="nav-link"><img src="images/icon/twitter.png" alt="Twitter" class="twitter-icon" style="width: 20px; height: 20px; vertical-align: middle;"> X.COM</a></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- All Tokens Section -->
+                    <div class="section-header">
+                        <img src="images/icon/fire.png" alt="Fire!" class="fire-icon">
+                        <h2>ALL MEME TOKENS</h2>
+                        <img src="images/icon/fire.png" alt="Fire!" class="fire-icon">
+                    </div>
+
+                    <!-- Sorting Options -->
+                    <div class="sorting-options module-window">
+                        <table width="100%" border="1" cellpadding="5" cellspacing="0" bgcolor="#DDFFDD">
+                            <tr>
+                                <td align="center" colspan="3">
+                                    <b>SORT BY:</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <button class="sort-button" data-sort="newest">
+                                        <img src="images/icon/new.png" alt="New" class="button-icon">
+                                        NEWEST
+                                    </button>
+                                </td>
+                                <td align="center">
+                                    <button class="sort-button" data-sort="popular">
+                                        <img src="images/icon/fire.png" alt="Popular" class="button-icon">
+                                        MOST PURCHASED
+                                    </button>
+                                </td>
+                                <td align="center">
+                                    <button class="sort-button" data-sort="viewed">
+                                        <img src="images/icon/info.png" alt="Viewed" class="button-icon">
+                                        MOST VIEWED
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Token List -->
+                    <div class="token-list module-window" id="tokenGrid">
+                        <!-- Tokens will be loaded here via JavaScript -->
+                        <div class="loading">
+                            <img src="images/loading.gif" alt="Loading...">
+                            <p>Loading all tokens...</p>
+                        </div>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="load-more-container">
+                        <button id="loadMoreBtn" class="load-more-button">
+                            <img src="images/icon/button.png" alt="Load More" class="button-icon">
+                            LOAD MORE TOKENS!!!
+                        </button>
+                    </div>
+
+                    <!-- Wall of Fame -->
+                    <div class="wall-of-fame module-window">
+                        <div class="section-header">
+                            <img src="images/icon/token.png" alt="Star!" class="star-icon">
+                            <h2>WALL OF FAME</h2>
+                            <img src="images/icon/token.png" alt="Star!" class="star-icon">
+                        </div>
+                        <table width="100%" border="2" cellpadding="5" cellspacing="0" bgcolor="#FFFFCC">
+                            <tr bgcolor="#FFCC99">
+                                <th>RANK</th>
+                                <th>TOKEN</th>
+                                <th>SYMBOL</th>
+                                <th>POPULARITY</th>
+                            </tr>
+                            <!-- Top tokens will be loaded here via JavaScript -->
+                            <tbody id="wallOfFame">
+                                <!-- Placeholder for JavaScript content -->
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                    <!-- Footer -->
+                    <div class="footer">
+                        <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <td align="center">
+                                    <div class="footer-links">
+                                        <a href="#">Home</a> |
+                                        <a href="#">About</a> |
+                                        <a href="#">Privacy Policy</a> |
+                                        <a href="#">Contact</a>
+                                    </div>
+                                    <div class="copyright">
+                                        &copy; 2025 LaunchPad 98. Best viewed with Netscape Navigator 4.0 or Internet Explorer 5.0
+                                    </div>
+                                    <div class="webring">
+                                        <a href="#"><img src="images/icon/Web_ring.png" alt="Web Ring"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="error_popup.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
